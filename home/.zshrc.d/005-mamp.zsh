@@ -11,7 +11,7 @@ mamp_setpath() {
 }
 
 mamp_resetpath() {
-  export $PATH_ORIG
+  export PATH=$PATH_ORIG
 }
 
 mamp_link() {
@@ -21,7 +21,8 @@ mamp_link() {
     ln -s /Applications/MAMP/Library/bin/mysql* -t /usr/local/mamp/
     ln -s /Applications/MAMP/bin/php/php7.0.13/bin/* -t /usr/local/mamp/
 
-    export PATH=/usr/local/mamp:$PATH
+    export PATH_ORIG=$PATH
+    export PATH=/usr/local/mamp:$PATH_ORIG
   fi
 }
 

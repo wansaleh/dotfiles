@@ -8,12 +8,12 @@ fi
 mamp_link() {
   if [ ! -d /usr/local/mamp ]; then
     mkdir /usr/local/mamp
+
+    ln -s /Applications/MAMP/Library/bin/mysql* -t /usr/local/mamp/
+    ln -s /Applications/MAMP/bin/php/php7.0.13/bin/* -t /usr/local/mamp/
+
+    export PATH=/usr/local/mamp:$PATH
   fi
-
-  ln -s /Applications/MAMP/Library/bin/mysql* -t /usr/local/mamp/
-  ln -s /Applications/MAMP/bin/php/php7.0.13/bin/* -t /usr/local/mamp/
-
-  export PATH=/usr/local/mamp:$PATH
 }
 
 mamp_unlink() {

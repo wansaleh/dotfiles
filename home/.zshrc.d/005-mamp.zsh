@@ -5,6 +5,15 @@ if [ -d /usr/local/mamp ]; then
   export PATH=/usr/local/mamp:$PATH
 fi
 
+mamp_setpath() {
+  export PATH_ORIG=$PATH
+  export PATH=/usr/local/mamp:$PATH_ORIG
+}
+
+mamp_resetpath() {
+  export $PATH_ORIG
+}
+
 mamp_link() {
   if [ ! -d /usr/local/mamp ]; then
     mkdir /usr/local/mamp
@@ -20,13 +29,4 @@ mamp_unlink() {
   if [ -d /usr/local/mamp ]; then
     rm -rf /usr/local/mamp
   fi
-}
-
-mamp_setpath() {
-  export PATH_ORIG=$PATH
-  export PATH=/usr/local/mamp:$PATH_ORIG
-}
-
-mamp_resetpath() {
-  export $PATH_ORIG
 }

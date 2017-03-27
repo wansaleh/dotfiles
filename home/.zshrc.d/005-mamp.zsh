@@ -19,3 +19,6 @@ mamp_unlink() {
     rm -rf /usr/local/mamp
   fi
 }
+
+alias mml="mamp_link"
+alias mmu="mamp_unlink"

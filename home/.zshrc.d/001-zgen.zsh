@@ -1,7 +1,7 @@
 # zgen oh-my-zsh plugins/common-aliases
 zgen oh-my-zsh plugins/z
-zgen load andrewferrier/fzf-z
-# zgen load changyuheng/fz
+# zgen load andrewferrier/fzf-z
+zgen load changyuheng/fz
 
 # Set keystrokes for substring searching
 zmodload zsh/terminfo

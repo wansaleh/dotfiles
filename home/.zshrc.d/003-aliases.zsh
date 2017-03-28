@@ -65,3 +65,6 @@ alias nginx.logs.phpmyadmin.error='tail -250f /Users/wan/Sites/logs/phpmyadmin.e
 alias nginx.logs.phpmyadmin.access='tail -250f /Users/wan/Sites/logs/phpmyadmin.access.log'
 
 alias vg="vagrant"
+
+# File Finder
+alias f="find . | fzy"

@@ -1,3 +1,6 @@
+# Enhancd
+source /opt/enhancd/init.sh
+
 # HOMEBREW
 # Add homebrew to the completion path
 fpath=("/usr/local/bin/" $fpath)

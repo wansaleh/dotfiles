@@ -22,3 +22,13 @@ mamp_unlink() {
 
 alias mml="mamp_link"
 alias mmu="mamp_unlink"
+
+usemamp() {
+  valet uninstall
+  mamp_link
+}
+
+usevalet() {
+  mamp_unlink
+  valet install
+}

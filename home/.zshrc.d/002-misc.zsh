@@ -1,5 +1,5 @@
 # Enhancd
-source /opt/enhancd/init.sh
+source $HOME/opt/enhancd/init.sh
 
 # HOMEBREW
 # Add homebrew to the completion path

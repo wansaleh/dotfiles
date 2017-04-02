@@ -67,4 +67,4 @@ alias nginx.logs.phpmyadmin.access='tail -250f /Users/wan/Sites/logs/phpmyadmin.
 alias vg="vagrant"
 
 # File Finder
-alias f="find . | fzy"
+alias f="find * | peco"

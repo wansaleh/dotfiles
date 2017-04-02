@@ -1,6 +1,3 @@
-# Enhancd
-source $HOME/opt/enhancd/init.sh
-
 # HOMEBREW
 # Add homebrew to the completion path
 fpath=("/usr/local/bin/" $fpath)
@@ -19,7 +16,3 @@ export EDITOR=atom
 
 bindkey -s '^G' ' | grep '
 bindkey -s '^`' ' | peco '
-
-eval "$(thefuck --alias)"
-
-source $( echo $(which vv)-completions)

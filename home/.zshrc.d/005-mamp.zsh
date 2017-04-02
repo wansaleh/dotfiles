@@ -3,7 +3,7 @@
 
 export PATH=/usr/local/mamp:$PATH
 
-mamp_link() {
+mamplink() {
   if [ ! -d /usr/local/mamp ]; then
     mkdir /usr/local/mamp
 
@@ -14,7 +14,7 @@ mamp_link() {
   fi
 }
 
-mamp_unlink() {
+mampunlink() {
   if [ -d /usr/local/mamp ]; then
     rm -rf /usr/local/mamp
   fi
@@ -25,10 +25,16 @@ alias mmu="mamp_unlink"
 
 usemamp() {
   valet uninstall
-  mamp_link
+  mamplink
 }
 
 usevalet() {
-  mamp_unlink
+  mampunlink
   valet install
 }
+
+# # WP CLI
+# wpinstall() {
+#   wp core config --dbname=werkstatt --dbuser=root --dbpass=root
+#   wp core install --url=werkstatt.dev --title="Wan Saleh" --admin_user=wansaleh --admin_password=Wan02098570 --admin_email=wansaleh@gmail.com
+# }

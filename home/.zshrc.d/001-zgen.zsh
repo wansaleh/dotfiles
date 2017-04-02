@@ -2,6 +2,7 @@
 zgen oh-my-zsh plugins/z
 # zgen load andrewferrier/fzf-z
 zgen load changyuheng/fz
+zgen oh-my-zsh plugins/yarn
 
 # Set keystrokes for substring searching
 zmodload zsh/terminfo

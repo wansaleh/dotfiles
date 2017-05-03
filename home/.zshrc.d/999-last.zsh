@@ -1,5 +1,5 @@
 # Enhancd
-source $HOME/opt/enhancd/init.sh
+# source $HOME/opt/enhancd/init.sh
 
 # TheFuck!
 eval "$(thefuck --alias)"

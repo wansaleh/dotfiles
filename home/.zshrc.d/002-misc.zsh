@@ -9,10 +9,13 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export AWS_ACCESS_KEY_ID=AKIAJ2AW6OZ5ODLETEOA
 export AWS_SECRET_ACCESS_KEY=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
 
+export NODE_ENV=development
+export BABEL_ENV=development
+
 # source $(echo $(which vv)-completions)
 # source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh
 
-export EDITOR=atom
+export EDITOR=code
 
 bindkey -s '^G' ' | grep '
 bindkey -s '^`' ' | peco '

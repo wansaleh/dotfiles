@@ -7,8 +7,8 @@ mamplink() {
   if [ ! -d /usr/local/mamp ]; then
     mkdir /usr/local/mamp
 
-    ln -sF /Applications/MAMP/Library/bin/mysql* -t /usr/local/mamp/
-    ln -sF /Applications/MAMP/bin/php/php7.0.13/bin/* -t /usr/local/mamp/
+    ln -sF /Applications/MAMP/Library/bin/mysql* /usr/local/mamp/
+    ln -sF /Applications/MAMP/bin/php/php7.1.1/bin/* /usr/local/mamp/
 
     export PATH=/usr/local/mamp:$PATH
   fi

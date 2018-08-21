@@ -69,5 +69,4 @@ alias vg="vagrant"
 # File Finder
 alias f="find * | peco"
 
-
-unalias po
+# unalias po

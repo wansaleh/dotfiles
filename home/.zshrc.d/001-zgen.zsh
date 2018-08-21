@@ -1,7 +1,9 @@
+zgen oh-my-zsh plugins/dotenv
 # zgen oh-my-zsh plugins/common-aliases
 zgen oh-my-zsh plugins/z
 # zgen load andrewferrier/fzf-z
 zgen load changyuheng/fz
+zgen load lukechilds/zsh-better-npm-completion
 zgen oh-my-zsh plugins/yarn
 
 # Set keystrokes for substring searching

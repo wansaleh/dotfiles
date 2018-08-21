@@ -1,37 +1,37 @@
-# export PHP_VERSION="7.0.13"
-# export PATH=/Applications/MAMP/bin/php/php${PHP_VERSION}/bin:/Applications/MAMP/Library/bin:$PATH
+PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
+export PATH=/Applications/MAMP/bin/php/${PHP_VERSION}/bin:/Applications/MAMP/Library/bin:$PATH
 
-export PATH=/usr/local/mamp:$PATH
+# export PATH=/usr/local/bin/mamp:$PATH
 
-mamplink() {
-  if [ ! -d /usr/local/mamp ]; then
-    mkdir /usr/local/mamp
+# mamplink() {
+#   if [ ! -d /usr/local/bin/mamp ]; then
+#     mkdir /usr/local/bin/mamp
 
-    ln -sF /Applications/MAMP/Library/bin/mysql* /usr/local/mamp/
-    ln -sF /Applications/MAMP/bin/php/php7.1.1/bin/* /usr/local/mamp/
+#     # ln -sF /Applications/MAMP/Library/bin/mysql* /usr/local/bin/mamp/
 
-    export PATH=/usr/local/mamp:$PATH
-  fi
-}
+#     PHP_VERSION=`ls /Applications/MAMP/bin/php/ | sort -n | tail -1`
+#     ln -sF /Applications/MAMP/bin/php/php7.1.12/bin/* /usr/local/bin/mamp/
+#   fi
+# }
 
-mampunlink() {
-  if [ -d /usr/local/mamp ]; then
-    rm -rf /usr/local/mamp
-  fi
-}
+# mampunlink() {
+#   if [ -d /usr/local/bin/mamp ]; then
+#     rm -rf /usr/local/bin/mamp
+#   fi
+# }
 
-alias mml="mamp_link"
-alias mmu="mamp_unlink"
+# alias mml="mamp_link"
+# alias mmu="mamp_unlink"
 
-usemamp() {
-  valet uninstall
-  mamplink
-}
+# usemamp() {
+#   valet uninstall
+#   mamplink
+# }
 
-usevalet() {
-  mampunlink
-  valet install
-}
+# usevalet() {
+#   mampunlink
+#   valet install
+# }
 
 # # WP CLI
 # wpinstall() {

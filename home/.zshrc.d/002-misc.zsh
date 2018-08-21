@@ -6,8 +6,8 @@ HOMEBREW_AUTO_UPDATE_SECS=3600
 
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
-export AWS_ACCESS_KEY_ID=AKIAJ2AW6OZ5ODLETEOA
-export AWS_SECRET_ACCESS_KEY=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
+# export AWS_ACCESS_KEY_ID=AKIAJ2AW6OZ5ODLETEOA
+# export AWS_SECRET_ACCESS_KEY=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
 
 export NODE_ENV=development
 export BABEL_ENV=development
@@ -16,6 +16,8 @@ export BABEL_ENV=development
 # source /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh
 
 export EDITOR=code
+
+export EXPO_DEBUG=true
 
 bindkey -s '^G' ' | grep '
 bindkey -s '^`' ' | peco '

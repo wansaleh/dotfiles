@@ -5,7 +5,7 @@
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Enhancd
-source $HOME/opt/enhancd/init.sh
+# source $HOME/opt/enhancd/init.sh
 
 # TheFuck!
 eval "$(thefuck --alias)"
@@ -13,24 +13,24 @@ eval "$(thefuck --alias)"
 # FZF fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Gulp
-eval "$(gulp --completion=zsh)"
+# # Gulp
+# eval "$(gulp --completion=zsh)"
 
 # # WP CLI
 autoload -U bashcompinit && bashcompinit
 # source $HOME/opt/wp-completion.bash
 
 # DirEnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # VVV
-source $( echo $(which vv)-completions)
+# source $( echo $(which vv)-completions)
 
-###-tns-completion-start-###
-if [ -f /Users/wan/.tnsrc ]; then
-    source /Users/wan/.tnsrc
-fi
-###-tns-completion-end-###
+# ###-tns-completion-start-###
+# if [ -f /Users/wan/.tnsrc ]; then
+#     source /Users/wan/.tnsrc
+# fi
+# ###-tns-completion-end-###
 
 if [ -n "$(/bin/ls /usr/local/etc/bash_completion.d)" ]; then
   for dotfile in /usr/local/etc/bash_completion.d*

@@ -6,6 +6,14 @@ zgen load bhilburn/powerlevel9k powerlevel9k
 # Set name of the theme to load.
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 
+prompt_rvm() {
+  local version_and_gemset=${$(__rvm_env_string)/ruby-}
+
+  if [[ -n "$version_and_gemset" ]]; then
+    "$1_prompt_segment" "$0" "$2" "grey35" "$DEFAULT_COLOR" "$version_and_gemset" 'RUBY_ICON'
+  fi
+}
+
 # Prompt settings
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
@@ -63,6 +71,10 @@ POWERLEVEL9K_NODE_VERSION_BACKGROUND="black"
 POWERLEVEL9K_NODE_VERSION_FOREGROUND="007"
 POWERLEVEL9K_NODE_VERSION_VISUAL_IDENTIFIER_COLOR="002"
 
+POWERLEVEL9K_RVM_BACKGROUND="black"
+POWERLEVEL9K_RVM_FOREGROUND="007"
+POWERLEVEL9K_RVM_VISUAL_IDENTIFIER_COLOR="001"
+
 # Battery
 POWERLEVEL9K_BATTERY_LOW_FOREGROUND='red'
 POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND='blue'
@@ -76,10 +88,12 @@ POWERLEVEL9K_TIME_BACKGROUND='blue'
 
 # User with skull
 user_with_skull() {
-    echo -n "\ufb8a $(whoami)"
+  echo -n "\ufb8a $(whoami)"
 }
 POWERLEVEL9K_CUSTOM_USER="user_with_skull"
 
 # Prompt elements
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_user dir vcs node_version)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_user dir vcs node_version rvm)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs time battery)
+
+neofetch

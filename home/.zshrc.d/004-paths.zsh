@@ -18,3 +18,5 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 
 # CURL
 # export PATH="/usr/local/opt/curl/bin:$PATH"
+
+export PATH=/usr/local/opt/mongodb@3.6/bin:$PATH

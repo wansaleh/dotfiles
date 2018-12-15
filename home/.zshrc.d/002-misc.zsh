@@ -21,3 +21,6 @@ export EXPO_DEBUG=true
 
 bindkey -s '^G' ' | grep '
 bindkey -s '^`' ' | peco '
+
+export REALDEBRID_USERNAME=wansaleh
+export REALDEBRID_PASSWORD=Wan02098570

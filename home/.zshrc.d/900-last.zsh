@@ -8,7 +8,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # source $HOME/opt/enhancd/init.sh
 
 # TheFuck!
-eval "$(thefuck --alias)"
+# eval "$(thefuck --alias)"
 
 # FZF fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

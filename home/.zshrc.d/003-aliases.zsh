@@ -70,3 +70,5 @@ alias vg="vagrant"
 alias f="find * | peco"
 
 # unalias po
+
+alias clearbadge="defaults write com.apple.systempreferences AttentionPrefBundleIDs 0 && killall Dock"

@@ -1,3 +1,4 @@
+zgen load romkatv/powerlevel10k powerlevel10k
 zgen oh-my-zsh plugins/dotenv
 # zgen oh-my-zsh plugins/common-aliases
 zgen oh-my-zsh plugins/z
